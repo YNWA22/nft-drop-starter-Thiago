@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable react-hooks/rules-of-hooks */
 import React from 'react';
 import './App.css';
 import twitterLogo from './assets/twitter-logo.svg';
@@ -35,7 +37,7 @@ const App = () => {
       <div className="container">
         <div className="header-container">
           <p className="header">🍭 Candy Drop</p>
-          <p className="sub-text">NFT drop machine with fair mint</p>
+          <p className="sub-text">NFT drop machine with Thiago</p>
         </div>
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
