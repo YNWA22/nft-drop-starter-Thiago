@@ -5,7 +5,19 @@ import twitterLogo from './assets/twitter-logo.svg';
 // Constants
 const TWITTER_HANDLE = '_buildspace';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
+const checkIfWalletIsConnected = async () => {
+    try {
+      const { solana } = window;
 
+      if (solana && solana.isPhantom) {
+          console.log('Phantom wallet found!');
+      } else {
+        alert('Solana object not found! Get a Phantom Wallet 👻');
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
 const App = () => {
   return (
     <div className="App">
